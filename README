@@ -1,0 +1,21 @@
+Nashorn is the ECMAScript engine bundled with Java SE 8
+http://docs.oracle.com/javase/8/
+
+Nashorn specific ECMAScript extensions are documented here:
+
+https://wiki.openjdk.java.net/display/Nashorn/Nashorn+extensions
+
+Nashorn implements JSR-223 (javax.script) API. Java SE 8
+includes two command line shell tools jrunscript and jjs
+as well.
+
+jjs is documented here:
+
+http://docs.oracle.com/javase/8/docs/technotes/tools/unix/jjs.html
+
+Nashorn OpenJDK wiki is here:
+
+https://wiki.openjdk.java.net/display/Nashorn/Main
+
+This project demonstrates scripting with nashorn with many small,
+simple examples that can be run with "jjs" tool.
