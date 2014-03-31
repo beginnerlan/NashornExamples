@@ -5,7 +5,7 @@ var DoubleStream = Java.type("java.util.stream.DoubleStream")
 
 var r = new Random()
 
-// closure expression (see closure_expression.js as well)
+// expression closure (see expression_closure.js as well)
 // passed as lambda double generator. "print" passed as 
 // double consumer lambda to 'forEach' method.
 
