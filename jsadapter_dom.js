@@ -55,8 +55,8 @@ function getElemText(elem) {
 
 // Wrap DOM Element object as a convenient script object
 // using JSAdapter. JSAdapter is like java.lang.reflect.Proxy
-// that allows property access, method calls be captured by
-// 'magic' methods like __get__, __call__.
+// in that it allows property access, method calls be trapped
+// by 'magic' methods like __get__, __call__.
 function wrapElement(elem) {
     if (! elem) {
         return elem
