@@ -1,5 +1,8 @@
 // Usage: jjs -fx jsonviewer.js
 
+// This example downloads a JSON file from a URL and
+// shows the same as a JavaFX tree view.
+
 // Using JavaFX from Nashorn. See also:
 // http://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/javafx.html
 
@@ -67,7 +70,7 @@ var obj = JSON.parse(readTextFromURL(url))
 
 // JavaFX start method
 function start(stage) {
-    stage.title = "AST Viewer"
+    stage.title = "JSON Viewer"
     var rootItem = treeItemForObject(obj, url)
     var tree = new TreeView(rootItem)
     var root = new StackPane()
