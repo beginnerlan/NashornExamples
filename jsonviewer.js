@@ -1,4 +1,6 @@
 // Usage: jjs -fx jsonviewer.js
+// or
+//        jjs -fx jsonviewer.js -- <url-of-json-doc>
 
 // This example downloads a JSON file from a URL and
 // shows the same as a JavaFX tree view.
@@ -65,7 +67,9 @@ function treeItemForObject(obj, name) {
     return item
 }
 
-var url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Chennai&amp;mode=json&amp;units=metric&amp;cnt=7`"
+var DEFAULT_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Chennai&amp;mode=json&amp;units=metric&amp;cnt=7`"
+
+var url = arguments.length == 0? DEFAULT_URL : arguments[0]
 var obj = JSON.parse(readTextFromURL(url))
 
 // JavaFX start method
