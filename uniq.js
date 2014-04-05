@@ -5,7 +5,6 @@
 
 var BufferedReader = Java.type("java.io.BufferedReader")
 var FileReader = Java.type("java.io.FileReader")
-var HashSet = Java.type("java.util.HashSet")
 var InputStreamReader = Java.type("java.io.InputStreamReader")
 var System = Java.type("java.lang.System")
 
