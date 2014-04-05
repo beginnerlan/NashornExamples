@@ -1,5 +1,5 @@
 // Usage: jjs uniq.js
-// or: jjs uniq.jj -- <file>
+// or: jjs uniq.js -- <file>
 
 // Unix uniq-like tool - omit repeated lines
 
