@@ -7,7 +7,6 @@
     var BufferedReader = Java.type("java.io.BufferedReader")
     var InputStreamReader = Java.type("java.io.InputStreamReader")
     var ProcessBuilder = Java.type("java.lang.ProcessBuilder")
-    var Redirect = Java.type("java.lang.ProcessBuilder.Redirect")
     var System = Java.type("java.lang.System")
 
     // print prompt
@@ -31,13 +30,10 @@
                     }
                 } else {
                     // build child process and start it!
-                    var procBuilder = 
-                        new ProcessBuilder(Arrays.asList(args))
-                            .redirectInput(Redirect.INHERIT)
-                            .redirectOutput(Redirect.INHERIT)
-                            .redirectError(Redirect.INHERIT)
-                    var p = procBuilder.start()
-                    p.waitFor()
+                    new ProcessBuilder(Arrays.asList(args))
+                        .inheritIO()
+                        .start()
+                        .waitFor()
                 }
             } catch (e) {
                 // print exception, if any
