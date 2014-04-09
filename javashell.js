@@ -66,12 +66,13 @@ function generate(show) {
     var fullcode = <<EOF
 // userful imports, add more here if you want
 // more imports.
+import static java.lang.System.*;
 import java.io.*;
 import java.net.*;
+import java.time.*;
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
-import static java.lang.System.*;
 
 public class Main {
    public static void main(String[] args) {
