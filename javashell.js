@@ -71,6 +71,7 @@ import java.net.*;
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
+import static java.lang.System.*;
 
 public class Main {
    public static void main(String[] args) {
