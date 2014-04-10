@@ -8,17 +8,12 @@
 // Java types used
 var Arrays = Java.type("java.util.Arrays")
 var BufferedReader = Java.type("java.io.BufferedReader")
-var File = Java.type("java.io.File")
 var FileWriter = Java.type("java.io.FileWriter")
+var LocalDateTime = Java.type("java.time.LocalDateTime")
 var InputStreamReader = Java.type("java.io.InputStreamReader")
 var PrintWriter = Java.type("java.io.PrintWriter")
 var ProcessBuilder = Java.type("java.lang.ProcessBuilder")
 var System = Java.type("java.lang.System")
-
-// delete file of given name
-function deleteFile(name) {
-    new File(name).delete()
-}
 
 // read multiple lines of input from stdin till user
 // enters an empty line
@@ -57,9 +52,9 @@ function writeTo(file, str) {
 
 // generate Java code with user's input
 // put inside generated main method
-function generate(show) {
-    var str = input()
-    if (str == "") {
+function generate(className) {
+    var usercode = input()
+    if (usercode == "") {
         return false
     }
 
@@ -74,18 +69,14 @@ import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
 
-public class Main {
-   public static void main(String[] args) {
-       ${str}
+public class ${className} {
+   public static void main(String[] args) throws Exception {
+       ${usercode}
    }
 }
 EOF
 
-    if (show) {
-        print(fullcode)
-    }
-
-    writeTo("Main.java", fullcode)
+    writeTo("${className}.java", fullcode)
     return true
 }
 
@@ -98,12 +89,19 @@ function exec(args) {
          .waitFor()
 }
 
+// generate unique name
+function uniqueName() {
+    var now = LocalDateTime.now().toString()
+    // replace unsafe chars with '_' 
+    return "JavaShell" + now.replace(/-|:|\./g, '_')
+}
+
 // read-compile-run loop
 while(true) {
-    deleteFile("Main.class")
-    if (generate()) {
-        exec("javac Main.java")
-        exec("java Main")
+    var className = uniqueName()
+    if (generate(className)) {
+        exec("javac ${className}.java")
+        exec("java ${className}")
     } else {
         break
     }
