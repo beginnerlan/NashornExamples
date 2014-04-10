@@ -1,7 +1,7 @@
 // Usage: jjs uniq.js
 // or: jjs uniq.js -- <file>
 
-// Unix uniq-like tool - omit repeated lines
+// omit repeated lines and print unique lines
 
 var BufferedReader = Java.type("java.io.BufferedReader")
 var FileReader = Java.type("java.io.FileReader")
