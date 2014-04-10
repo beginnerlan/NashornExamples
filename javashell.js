@@ -64,6 +64,7 @@ function generate(className) {
 import static java.lang.System.*;
 import java.io.*;
 import java.net.*;
+import java.nio.file.*;
 import java.time.*;
 import java.time.chrono.*;
 import java.time.format.*;
