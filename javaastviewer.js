@@ -1,10 +1,10 @@
-// Usage: jjs -fx javaastviewer.js -- <.java files>
+#// Usage: jjs -fx javaastviewer.js -- <.java files>
 
 // This example demonstrates Java subclassing by Java.extend
 // and javac Compiler and Tree API. This example also uses
 // -fx and javafx TreeView to visualize Java AST as TreeView
 
-if (arguments.length == 0) {
+if (!$OPTIONS._fx || arguments.length == 0) {
     print("Usage: jjs -fx javaastviewer.js -- <.java files>")
     exit(1)
 }

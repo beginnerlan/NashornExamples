@@ -1,4 +1,4 @@
-// Usage: jjs -scripting env.js
+#// Usage: jjs -scripting env.js
 
 // In nashorn -scripting mode, 
 // "$ENV" object exposes process 

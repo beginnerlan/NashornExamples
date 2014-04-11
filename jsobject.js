@@ -1,4 +1,4 @@
-// Usage: jjs -scripting -cp . jsobject.js
+#// Usage: jjs -scripting -cp . jsobject.js
 
 // This sample demonstrats how to expose a
 // script friendly object from your java code

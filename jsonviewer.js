@@ -1,6 +1,11 @@
-// Usage: jjs -fx jsonviewer.js
+#// Usage: jjs -fx jsonviewer.js
 // or
 //        jjs -fx jsonviewer.js -- <url-of-json-doc>
+
+if (! $OPTIONS._fx) {
+    print("Usage: jjs -fx jsonviewer.js -- <url-of-json-doc>")
+    exit(1)
+}
 
 // This example downloads a JSON file from a URL and
 // shows the same as a JavaFX tree view.

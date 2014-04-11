@@ -1,4 +1,4 @@
-// usage: jjs -scripting weather.js
+#// usage: jjs -scripting weather.js
 
 // Simple nashorn example showing back-quote exec process,
 // JSON and Java8 streams

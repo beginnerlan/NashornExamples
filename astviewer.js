@@ -1,4 +1,9 @@
-// Usage: jjs -scripting -fx astviewer.js -- <scriptfile>
+#// Usage: jjs -scripting -fx astviewer.js -- <scriptfile>
+
+if (!$OPTIONS._fx) {
+    print("Usage: jjs -scripting -fx astviewer.js -- <.js file>")
+    exit(1)
+}
 
 // Using JavaFX from Nashorn. See also:
 // http://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/javafx.html

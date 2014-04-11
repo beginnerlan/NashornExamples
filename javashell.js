@@ -1,4 +1,4 @@
-// Usage: jjs -scripting javashell.js
+#// Usage: jjs -scripting javashell.js
 
 // Simple Java "shell" with which you can try out
 // your few liner Java code leaving imports, main etc.

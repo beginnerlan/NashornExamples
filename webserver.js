@@ -1,4 +1,4 @@
-// Usage: jjs -scripting webserver
+#// Usage: jjs -scripting webserver
 // or     jjs -scripting webserver -- <server_port>
 //
 // and then point your browser to

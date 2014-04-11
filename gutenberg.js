@@ -1,4 +1,4 @@
-// Usage: jjs -scripting gutenberg.js
+#// Usage: jjs -scripting gutenberg.js
 
 // Simple example that demonstrates reading XML Rss feed
 // to generate a HTML file from script and show it by browser

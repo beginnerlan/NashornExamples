@@ -1,4 +1,4 @@
-// Usage: jjs -scripting jsadapter_dom.js
+#// Usage: jjs -scripting jsadapter_dom.js
 
 // Simple example that demonstrates reading XML Rss feed
 // to generate a HTML file from script and show it by browser

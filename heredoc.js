@@ -1,4 +1,4 @@
-// Usage: jjs -scripting heredoc.js
+#// Usage: jjs -scripting heredoc.js
 
 // Nashorn supports Shell script like here-documents
 // in -scripting mode. Here-docs are multi-line strings
