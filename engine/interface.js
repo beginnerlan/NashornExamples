@@ -1,4 +1,4 @@
-// Usage: jjs -scripting interface.js
+#// Usage: jjs -scripting interface.js
 
 // Example demonstrating how to implement a Java interface
 // whose methods are backed by global script functions

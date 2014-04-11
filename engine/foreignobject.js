@@ -1,4 +1,4 @@
-// Usage: jjs -scripting foreignobject.js
+#// Usage: jjs -scripting foreignobject.js
 
 // cross nashorn engine scripting
 // access script objects from other engines in natural syntax

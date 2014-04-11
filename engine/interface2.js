@@ -1,4 +1,4 @@
-// Usage: jjs -scripting interface2.js
+#// Usage: jjs -scripting interface2.js
 
 // Simple example demonstrating how to implement java interface
 // whose methods are backed by script methods of a script object

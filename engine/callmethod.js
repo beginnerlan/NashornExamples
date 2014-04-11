@@ -1,4 +1,4 @@
-// Usage: jjs -scripting callmethod.js
+#// Usage: jjs -scripting callmethod.js
 
 // simple example demonstrating calling a script object
 // method from script engine user code
